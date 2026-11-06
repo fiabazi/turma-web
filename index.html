@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'" />
+    <meta name="theme-color" content="#f2f2f7" />
+    <meta name="description" content="Turma ist ein gemeinsamer Arbeitsplatz fuer Gruppen, die zusammen an Projekten arbeiten. Zugang nur auf Einladung." />
+    <link rel="icon" type="image/png" href="./turma-icon.png" />
+    <link rel="stylesheet" href="./seite.css" />
+    <title>Turma — gemeinsamer Arbeitsplatz für Projekte</title>
+  </head>
+  <body>
+    <main>
+      <header class="kopf">
+        <img src="./turma-icon.png" alt="" />
+        <div>
+          <h1>Turma</h1>
+          <p>Gemeinsamer Arbeitsplatz für Gruppen</p>
+        </div>
+      </header>
+
+      <!-- Der Download steht oben, nicht unten. Wer hierherkommt, hat
+           einen Einladungscode in der Hand und will die Datei; alles
+           andere kann er danach lesen. Die Versionsnummer setzt
+           seite-bauen.cjs ein, damit der Link beim naechsten Release
+           nicht auf eine Datei zeigt, die es nicht mehr gibt. -->
+      <section class="holen">
+        <div>
+          <h2>Turma herunterladen</h2>
+          <p class="leise">Windows · Version 1.8.9 · keine Administratorrechte nötig</p>
+        </div>
+        <a class="knopf" href="https://github.com/fiabazi/fiabazi-turma-releases/releases/latest/download/Turma-Setup-1.8.9.exe">
+          Installer laden
+        </a>
+      </section>
+
+      <div class="kasten leise-kasten">
+        <p>
+          Beim Start warnt Windows, dass der Herausgeber unbekannt ist. Das ist
+          normal: die App ist nicht signiert, weil ein Zertifikat Geld kostet.
+          Auf <strong>Weitere Informationen</strong> und dann
+          <strong>Trotzdem ausführen</strong> klicken.
+        </p>
+        <p>
+          Nach dem Installieren brauchst du einen <strong>Einladungscode</strong>.
+          Den bekommst du von der Person, die dich einlädt — Turma ist nicht
+          offen zugänglich.
+        </p>
+      </div>
+
+      <p>
+        Turma ist eine Windows-App für kleine Gruppen, die zusammen arbeiten. Darin liegen die
+        Projekte einer Gruppe an einem Ort: Notizen, Aufgaben und Links, für
+        alle sichtbar, die zur Gruppe gehören. Wer die App auf seinem Rechner
+        installiert, sieht denselben Stand wie die anderen.
+      </p>
+
+      <div class="kasten">
+        <strong>Der Zugang ist nur auf Einladung möglich.</strong>
+        <p>
+          Hier kann sich niemand selbst anmelden. Ein Konto entsteht nur für
+          eine E-Mail-Adresse, für die vorher eine Einladung freigegeben wurde;
+          die Datenbank weist alles andere ab. Ohne Einladung führt die
+          Web-Fassung also nur zum Anmeldeformular und nicht weiter.
+        </p>
+      </div>
+
+      <h2>Was Turma tut</h2>
+      <ul>
+        <li>Projekte anlegen und in einer Gruppe teilen</li>
+        <li>Notizen, Aufgaben und Links zu einem Projekt sammeln</li>
+        <li>Mitschüler per E-Mail-Adresse in eine Gruppe einladen</li>
+        <li>Anmeldung per E-Mail und Passwort oder mit dem Google-Konto</li>
+        <li>Die Windows-App hält sich selbst aktuell</li>
+      </ul>
+
+      <h2>Was Turma nicht tut</h2>
+      <ul>
+        <li>Keine Werbung, keine Auswertung des Verhaltens, keine Weitergabe von Daten</li>
+        <li>Kein Zugriff auf Google Drive oder andere Dateien im Google-Konto</li>
+        <li>Keine Chat-, Video- oder Benachrichtigungsfunktionen</li>
+        <li>Kein Dienst, der etwas kostet oder etwas verspricht — siehe die Nutzungsbedingungen</li>
+      </ul>
+
+      <h2>Holen</h2>
+      <p>
+        Der Hauptweg ist die Windows-App. Einmal installieren, danach
+        kommen Aktualisierungen von selbst. Die Web-Fassung ist Vorschau und
+        Notnagel — nützlich auf einem fremden Rechner, aber nicht der
+        Hauptweg.
+      </p>
+      <div class="knoepfe">
+        <a class="knopf wichtig" href="https://github.com/fiabazi/fiabazi-turma-releases/releases/latest">Windows-Installer herunterladen</a>
+        <a class="knopf" href="./app/">Zur Web-Fassung</a>
+      </div>
+      <p>
+        Die EXE ist nicht signiert. Windows kann deshalb bei der ersten
+        Installation eine SmartScreen-Meldung zeigen; über «Weitere
+        Informationen» lässt sie sich bestätigen.
+      </p>
+
+      <h2>Fragen? Frag deine eigene KI</h2>
+      <p>
+        Es gibt eine Textdatei, die Turma vollständig beschreibt — wie man
+        hineinkommt, was die einzelnen Bereiche tun, wer was sieht, und
+        welche Macken bekannt sind. Lade sie herunter und gib sie deinem
+        KI-Assistenten (ChatGPT, Claude, was du benutzt). Danach kannst du
+        dort fragen statt zu suchen.
+      </p>
+      <div class="knoepfe">
+        <a class="knopf" href="./turma-fuer-deine-ki.md" download>Wissensdatei herunterladen</a>
+      </div>
+      <p>
+        Sie ist für eine KI geschrieben, nicht zum Durchlesen — sie enthält
+        auch die Anweisung, bei Unbekanntem ehrlich «weiss ich nicht» zu
+        sagen, statt sich etwas auszudenken.
+      </p>
+
+      <h2>Wer dahinter steht</h2>
+      <p>
+        Turma ist ein privates Projekt von Fidan Abazi. Kein Unternehmen,
+        kein kommerzielles Angebot. Fragen,
+        Einladungen und Löschwünsche:
+        <a href="mailto:abazifidan@gmail.com">abazifidan@gmail.com</a>.
+      </p>
+
+      <footer>
+        <a href="./datenschutz.html">Datenschutzerklärung</a>
+        <a href="./nutzungsbedingungen.html">Nutzungsbedingungen</a>
+        <a href="https://github.com/fiabazi/fiabazi-turma-releases/releases/latest">Installer</a>
+      </footer>
+    </main>
+  </body>
+</html>
