@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- raw.githubusercontent.com steht in connect-src fuer die
+         News-Abteilung: dort liegt die eine gesammelte Datei (Zweig
+         `news` von fiabazi/turma-web, siehe src/renderer/src/news.ts).
+         Die Verlage selbst stehen NICHT hier und sollen es nicht --
+         keiner von ihnen schickt CORS-Koepfe, und 23 Adressen in einer
+         Sicherheitsrichtlinie waeren bei jeder Listenaenderung eine
+         neue Auslieferung. Die Backend-Adresse setzt config/csp.mts
+         zur Bauzeit direkt hinter 'self' ein. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https://tgmakwqncdsjmqplbjvs.supabase.co https://raw.githubusercontent.com; connect-src 'self' https://tgmakwqncdsjmqplbjvs.supabase.co wss://tgmakwqncdsjmqplbjvs.supabase.co https://raw.githubusercontent.com; object-src 'none'; base-uri 'none'; form-action 'none'" />
+    <meta name="theme-color" content="#f2f2f7" />
+    <link rel="icon" type="image/png" href="./turma-icon.png" />
+    <title>Turma — Projekte</title>
+    <!-- Legt die Farben des zuletzt gewaehlten Schemas auf das Startbild,
+         damit beim Oeffnen kein fremdes Design aufblitzt. Eigene Datei und
+         kein Inline-Skript: Die ausgelieferte Richtlinie erlaubt nur
+         Skripte von 'self'. -->
+    <script src="./startbild.js"></script>
+    <!--
+      Das Startbild steht hier und nicht in React.
+
+      Der Grund ist der Zeitpunkt: React zeichnet erst, wenn das Bündel
+      geladen und ausgeführt ist — also genau nach der Sekunde, die man
+      überbrücken will. Was hier im Dokument steht, ist beim allerersten
+      Bild da.
+
+      Darum auch keine Stilvorlage von aussen und kein Skript: eine
+      zweite Datei wäre eine zweite Anfrage, und die Zugriffsregel in der
+      Kopfzeile verbietet Skripte im Dokument ohnehin. Entfernt wird das
+      Bild aus main.tsx, sobald React steht.
+
+      Das Farbschema richtet sich nach dem System. Die App kennt
+      daneben eine eigene Einstellung, die weiss sie aber erst, wenn sie
+      läuft — und ein heller Blitz vor einer dunklen App ist schlimmer
+      als eine Sekunde im falschen Schema.
+    -->
+    <style>:root{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light dark}@media (prefers-color-scheme:dark){:root{--lightningcss-light: ;--lightningcss-dark:initial}}body{margin:0}#startbild{z-index:9999;perspective:1100px;background:#f1efe8;place-content:center;justify-items:center;gap:1.25rem;font-family:Inter,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif;transition:opacity .26s cubic-bezier(.23,1,.32,1);display:grid;position:fixed;inset:0}#startbild.weg{opacity:0;pointer-events:none}#startbild img{width:128px;height:128px;animation:1.4s cubic-bezier(.17,.84,.26,1) both startbild-flug,1.4s ease-out both startbild-glut}@font-face{font-family:Ghastly Panic;src:url(schrift/ghastly-panic.ttf)format("truetype");font-display:block}#startbild .wortmarke{color:#1a1c20;letter-spacing:-.01em;font-family:Ghastly Panic,Inter,sans-serif;font-size:2.6rem;font-weight:600;line-height:1.35;animation:.42s cubic-bezier(.23,1,.32,1) .82s both startbild-auf}#startbild .wortmarke small{color:#5b5e63;letter-spacing:.16em;margin-top:.3125rem;font-size:.8125rem;font-weight:500;display:block}@keyframes startbild-auf{0%{opacity:0;transform:scale(.94)}to{opacity:1;transform:none}}@keyframes startbild-flug{0%{opacity:0;transform:translateZ(-900px)rotateX(38deg)rotateY(-540deg)}12%{opacity:1}to{opacity:1;transform:translateZ(0)rotateX(0)rotateY(0)}}@keyframes startbild-glut{0%,62%{filter:drop-shadow(0 0 #f0782800)}78%{filter:drop-shadow(0 0 26px #f07828cc)}to{filter:drop-shadow(0 0 12px #f0782847)}}#startbild{animation:0s linear 8s forwards startbild-notausgang}@keyframes startbild-notausgang{to{opacity:0;pointer-events:none}}@media (prefers-color-scheme:dark){#startbild{background:#151619}#startbild .wortmarke{color:#eceae2}#startbild .wortmarke small{color:#9aa2ae}}@media (prefers-reduced-motion:reduce){#startbild{transition:none;animation:0s linear 8s forwards startbild-notausgang}#startbild img,#startbild .wortmarke{transition:none;animation:none}}</style>
+    <script type="module" crossorigin src="./assets/index-BuY03jvh.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-BOqbFkU1.css">
+  </head>
+  <body>
+    <div id="startbild">
+      <img src="./turma-icon.png" alt="" width="128" height="128" />
+      <div class="wortmarke">turma.<small>BY BAZI</small></div>
+    </div>
+    <div id="root"></div>
+    <!-- Die Filter fuer die roten Schemata.
+
+         feTurbulence erzeugt Rauschen, feDisplacementMap verschiebt
+         damit Pixel: so werden Kanten gerissen statt geometrisch
+         geschnitten. Genau das unterscheidet Ghastly Panic von einer
+         sauberen Grotesk, und genau das fehlte, als die Oberflaeche
+         nur eckig war -- eckig ist schweizerisch-nuechtern, die
+         Schrift ist ausgefranst.
+
+         Die Frequenz ist waagerecht niedrig und senkrecht hoch
+         (0.012 0.055): das reisst die Kanten entlang der Senkrechten
+         auf, wie die Striche der Schrift.
+
+         Der Filterbereich ist groesser als das Element. Ohne das
+         schneidet die Verschiebung genau die Zacken ab, die sie
+         gerade erzeugt hat -- der haeufigste Fehler bei dieser
+         Technik.
+
+         Liegt hier und nicht in einer Komponente, damit es die
+         Filter genau einmal im Dokument gibt. -->
+    <svg aria-hidden="true" focusable="false"
+         style="position:absolute;width:0;height:0;overflow:hidden">
+      <defs>
+        <filter id="turma-rau" x="-30%" y="-45%" width="160%" height="190%">
+          <!-- ZWEI Turbulenzen, nicht eine. Mit nur einer und starker
+               Spreizung saettigen die feinen Oktaven weg, und uebrig
+               bleibt die Grundfrequenz als Sinus: die Kante schwang
+               mit rund 40px Periode, statt zu reissen. Eine grobe
+               Welle plus eine feine Stoerung mit anderem seed bricht
+               die Periodizitaet. -->
+          <feTurbulence type="fractalNoise" baseFrequency="0.03 0.09"
+                        numOctaves="5" seed="11" result="grob" />
+          <feTurbulence type="fractalNoise" baseFrequency="0.14 0.3"
+                        numOctaves="2" seed="40" result="fein" />
+          <feBlend in="grob" in2="fein" mode="overlay" result="gemischt" />
+          <!-- Spreizung nur noch 2.6: staerker frisst sie genau die
+               feinen Anteile, die den Riss ausmachen. -->
+          <feComponentTransfer in="gemischt" result="rauschen">
+            <feFuncR type="linear" slope="2.6" intercept="-0.80" />
+            <feFuncG type="linear" slope="2.6" intercept="-0.80" />
+          </feComponentTransfer>
+          <feDisplacementMap in="SourceGraphic" in2="rauschen" scale="5.5"
+                             xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+        <filter id="turma-rau-fein" x="-30%" y="-50%" width="160%" height="200%">
+          <!-- ZWEI Turbulenzen, nicht eine. Mit nur einer und starker
+               Spreizung saettigen die feinen Oktaven weg, und uebrig
+               bleibt die Grundfrequenz als Sinus: die Kante schwang
+               mit rund 40px Periode, statt zu reissen. Eine grobe
+               Welle plus eine feine Stoerung mit anderem seed bricht
+               die Periodizitaet. -->
+          <feTurbulence type="fractalNoise" baseFrequency="0.045 0.11"
+                        numOctaves="4" seed="4" result="grob" />
+          <feTurbulence type="fractalNoise" baseFrequency="0.2 0.4"
+                        numOctaves="2" seed="19" result="fein" />
+          <feBlend in="grob" in2="fein" mode="overlay" result="gemischt" />
+          <!-- Spreizung nur noch 2.4: staerker frisst sie genau die
+               feinen Anteile, die den Riss ausmachen. -->
+          <feComponentTransfer in="gemischt" result="rauschen">
+            <feFuncR type="linear" slope="2.4" intercept="-0.70" />
+            <feFuncG type="linear" slope="2.4" intercept="-0.70" />
+          </feComponentTransfer>
+          <feDisplacementMap in="SourceGraphic" in2="rauschen" scale="3.4"
+                             xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+        <filter id="turma-rau-klein" x="-40%" y="-60%" width="180%" height="220%">
+          <!-- ZWEI Turbulenzen, nicht eine. Mit nur einer und starker
+               Spreizung saettigen die feinen Oktaven weg, und uebrig
+               bleibt die Grundfrequenz als Sinus: die Kante schwang
+               mit rund 40px Periode, statt zu reissen. Eine grobe
+               Welle plus eine feine Stoerung mit anderem seed bricht
+               die Periodizitaet. -->
+          <feTurbulence type="fractalNoise" baseFrequency="0.08 0.18"
+                        numOctaves="3" seed="19" result="grob" />
+          <feTurbulence type="fractalNoise" baseFrequency="0.3 0.6"
+                        numOctaves="2" seed="64" result="fein" />
+          <feBlend in="grob" in2="fein" mode="overlay" result="gemischt" />
+          <!-- Spreizung nur noch 2.2: staerker frisst sie genau die
+               feinen Anteile, die den Riss ausmachen. -->
+          <feComponentTransfer in="gemischt" result="rauschen">
+            <feFuncR type="linear" slope="2.2" intercept="-0.60" />
+            <feFuncG type="linear" slope="2.2" intercept="-0.60" />
+          </feComponentTransfer>
+          <feDisplacementMap in="SourceGraphic" in2="rauschen" scale="2.0"
+                             xChannelSelector="R" yChannelSelector="G" />
+        </filter>
+      </defs>
+    </svg>
+  </body>
+</html>
