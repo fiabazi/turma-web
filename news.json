@@ -1,0 +1,512 @@
+{
+ "stand": "2026-11-14T12:17:06.467Z",
+ "beitraege": [
+  {
+   "titel": "Introducing Gemini 4 Hydrogen",
+   "quelle": "Google DeepMind",
+   "was": "Das KI-Labor von Google. Hier stehen ihre neuen Modelle und Forschungsarbeiten.",
+   "rang": 1,
+   "bild": "bilder/c4b94b713fda1362.jpg",
+   "datum": "2026-11-12T18:00:50.000Z",
+   "link": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+   "teaser": ""
+  },
+  {
+   "titel": "The avalanche that hit math is coming for AI development",
+   "quelle": "Dwarkesh Patel",
+   "was": "Podcast. Lange Gespraeche mit den Leuten, die KI tatsaechlich bauen.",
+   "rang": 2,
+   "datum": "2026-11-13T18:37:51.000Z",
+   "link": "https://www.dwarkesh.com/p/rsi",
+   "teaser": "Why I now expect superintelligence by 2030"
+  },
+  {
+   "titel": "Home Assistant mit KI: Gruselig und gut",
+   "quelle": "c't 3003",
+   "was": "Auf Deutsch. Der Technikkanal von c't probiert Geraete und KI-Werkzeuge aus und sagt, was davon zu halten ist.",
+   "rang": 2,
+   "bild": "bilder/db5070bc6c07f539.jpg",
+   "datum": "2026-11-13T15:00:30.000Z",
+   "link": "https://www.youtube.com/watch?v=7Mk0dCDZHkY",
+   "teaser": ""
+  },
+  {
+   "titel": "Reranking in RAG: How to Fix Bad Retrieval with a Reranker",
+   "quelle": "OpenRouter",
+   "was": "Eine Schnittstelle fuer alle Modelle. Schreibt ueber neue Modelle und darueber, wie man sie benutzt.",
+   "rang": 2,
+   "bild": "bilder/3b4bfb7ffda71abc.jpg",
+   "datum": "2026-11-13T00:00:00.000Z",
+   "link": "https://openrouter.ai/blog/tutorials/reranking-rag/",
+   "teaser": "When a RAG (Retrieval-Augmented Generation) app gives wrong answers even though the right information is in your documents, retrieval is often the cause. Vector search is great at finding chunks on the right topic, but…"
+  },
+  {
+   "titel": "Nvidia and the World Without Jensen",
+   "quelle": "SemiAnalysis",
+   "was": "Geht Chips und Rechenzentren bis auf die Lieferkette nach -- die Hardware hinter der KI.",
+   "rang": 2,
+   "bild": "bilder/2e00e6eca9c876d9.jpg",
+   "datum": "2026-11-12T18:06:26.000Z",
+   "link": "https://newsletter.semianalysis.com/p/nvidia-and-the-world-without-jensen",
+   "teaser": "Is NVIDIA Over? Export Controls, RASA, Open Source Implications, Supply Chain Implications, Affair, US Still Dependent On China"
+  },
+  {
+   "titel": "Vals AI Announces Participation in Reconvened NIST Artificial Intelligence Consortium",
+   "quelle": "Vals AI",
+   "was": "Misst, welches Modell in echten Aufgaben wirklich das beste ist.",
+   "rang": 2,
+   "bild": "bilder/d7b9d467af8aadab.jpg",
+   "datum": "2026-11-12T12:00:00.000Z",
+   "link": "https://www.vals.ai/blogs/nist-ai-consortium",
+   "teaser": "Vals AI joins the reconvened U.S. initiative to empower the collaborative promotion and development of artificial intelligence."
+  },
+  {
+   "titel": "the answer to ai is engineering",
+   "quelle": "Geoffrey Huntley",
+   "was": "Schreibt darueber, wie man KI-Agenten in Schleifen arbeiten laesst.",
+   "rang": 2,
+   "datum": "2026-11-11T19:38:58.000Z",
+   "link": "https://ghuntley.com/answer/",
+   "teaser": "I gave a talk at AI DevCon New York about why security take-off is the new normal, why you don't need most open-source libraries anymore, and how a Nix overlay lets you patch the whole world, then a bonus round on…"
+  },
+  {
+   "titel": "Locating the source of a mysterious beep with Claude",
+   "quelle": "Simon Willison",
+   "was": "Probiert jedes neue Modell an echtem Code aus und schreibt auf, was dabei wirklich herauskommt.",
+   "rang": 2,
+   "bild": "bilder/959fde5a1d3f9ccf.webp",
+   "datum": "2026-11-09T23:57:21.000Z",
+   "link": "https://simonwillison.net/2026/Nov/9/mysterious-beeps/",
+   "teaser": "Our house has a box room, full of boxes that we still haven't unpacked from our last move. A couple of weeks ago something in that room started intermittently beeping . The beeps were far enough apart that standing in…"
+  },
+  {
+   "titel": "Import AI 480: Self-sustaining space economies; AI for science progress, and Meta builds perfect hands for a superintelligence",
+   "quelle": "Import AI",
+   "was": "Woechentlicher Brief von Jack Clark, Mitgruender von Anthropic. Fasst neue Forschungsarbeiten zusammen und ordnet sie ein.",
+   "rang": 2,
+   "bild": "bilder/35a59387844e8337.png",
+   "datum": "2026-11-09T13:31:34.000Z",
+   "link": "https://jack-clark.net/2026/11/09/import-ai-480-self-sustaining-space-economies-ai-for-science-progress-and-meta-builds-perfect-hands-for-a-superintelligence/",
+   "teaser": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now AI Science startup converts a quantum…"
+  },
+  {
+   "titel": "v1.65.1",
+   "quelle": "Playwright",
+   "was": "Steuert einen Browser fuer Tests. Turma prueft damit seine eigene Oberflaeche.",
+   "rang": 3,
+   "bild": "bilder/ac6655f7319a8ef0.png",
+   "datum": "2026-11-13T21:46:58.000Z",
+   "link": "https://github.com/microsoft/playwright/releases/tag/v1.65.1",
+   "teaser": "Bug Fixes #43936 [Regression]: decorated class with a static field fails to load in 1.65 (\"_initClass is not a function\") with useDefineForClassFields: false #43934 [Bug]: Test locations are one column off under Bun…"
+  },
+  {
+   "titel": "FAA expands AI advice to manage air traffic congestion across entire US airspace",
+   "quelle": "Ars Technica",
+   "was": "Technikredaktion mit langer Erfahrung, hier nur die KI-Meldungen. Prueft Behauptungen nach, statt sie weiterzugeben.",
+   "rang": 3,
+   "bild": "bilder/fb1282143880a0a1.jpg",
+   "datum": "2026-11-13T21:20:47.000Z",
+   "link": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/",
+   "teaser": "Airlines praised the AI tool, but the air traffic controllers’ union wasn’t involved."
+  },
+  {
+   "titel": "v2.1.325",
+   "quelle": "Claude Code",
+   "was": "Was sich an Claude Code aendert -- dem Werkzeug, mit dem Turma gebaut wird. Versionshinweise, mehrmals pro Woche.",
+   "rang": 3,
+   "bild": "bilder/6cec937a1c4cf8a6.png",
+   "datum": "2026-11-13T20:40:01.000Z",
+   "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.325",
+   "teaser": "What's changed Fixed a security issue in how zstd-compressed responses are decoded Added a spinner tip in VS Code and similar integrated terminals about re-running a notebook cell, shown once Claude has read or edited a…"
+  }
+ ],
+ "kanalbilder": {
+  "https://www.youtube.com/@elenaonoffline": "bilder/166825faf5ea9537.jpg",
+  "https://www.youtube.com/@ct3003": "bilder/ac99a97bb520f4e7.jpg",
+  "https://www.heise.de/": "bilder/3688881ab86ea2d7.png",
+  "https://www.youtube.com/@NetworkChuck": "bilder/a562245b090cbe81.jpg",
+  "https://www.youtube.com/@LinusTechTips": "bilder/8c52ce3bc2614e90.jpg",
+  "https://www.tiktok.com/@rowancheung": "bilder/3829c8d64ccb30af.jpg",
+  "https://www.youtube.com/@AndrejKarpathy": "bilder/6a387a5e6d12af27.jpg",
+  "https://www.dwarkesh.com/": "bilder/56e669fec1bb905e.jpg",
+  "https://magazine.sebastianraschka.com/": "bilder/7e55b52cdb8d5974.png",
+  "https://arstechnica.com/": "bilder/4551baa73cb5f265.png",
+  "https://world.hey.com/dhh": "bilder/ded7c956c5cc03d0.jpg"
+ },
+ "kanalvideos": {
+  "https://www.youtube.com/@elenaonoffline": {
+   "titel": "Why Did the Midterms Scare the AI Markets?",
+   "link": "https://www.youtube.com/watch?v=k7DU6hDM2XU",
+   "datum": "2026-11-06T16:23:30.000Z",
+   "bild": "bilder/c02d86b687a74e40.jpg"
+  },
+  "https://www.youtube.com/@ct3003": {
+   "titel": "Home Assistant mit KI: Gruselig und gut",
+   "link": "https://www.youtube.com/watch?v=7Mk0dCDZHkY",
+   "datum": "2026-11-13T15:00:30.000Z",
+   "bild": "bilder/a4062d9d766a2be4.jpg"
+  },
+  "https://www.youtube.com/@NetworkChuck": {
+   "titel": "i wired my toilet to a Raspberry Pi",
+   "link": "https://www.youtube.com/watch?v=m1NtVno-y7Q",
+   "datum": "2026-11-11T17:24:38.000Z",
+   "bild": "bilder/0e678baedf1bbd2a.jpg"
+  },
+  "https://www.youtube.com/@LinusTechTips": {
+   "titel": "Every Samsung Fold Compared",
+   "link": "https://www.youtube.com/watch?v=taBO0I1YBzU",
+   "datum": "2026-11-13T17:27:31.000Z",
+   "bild": "bilder/893b497d1064c974.jpg"
+  },
+  "https://www.dwarkesh.com/": {
+   "titel": "Recursive self-improvement has started",
+   "link": "https://www.youtube.com/watch?v=1NHPDzpfR6Y",
+   "datum": "2026-11-13T18:37:05.000Z",
+   "bild": "bilder/cbbfd504980dc6d7.jpg"
+  }
+ },
+ "schlagzeilen": [
+  {
+   "titel": "Rust 1.100",
+   "link": "https://blog.rust-lang.org/2026/11/12/Rust-1.100.0/",
+   "domain": "blog.rust-lang.org",
+   "datum": "2026-11-12T18:39:05.000Z",
+   "punkte": 1197,
+   "bild": "bilder/81af212e4003e442.jpg",
+   "auszug": "Empowering everyone to build reliable and efficient software."
+  },
+  {
+   "titel": "Gemini 4 Hydrogen",
+   "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+   "domain": "blog.google",
+   "datum": "2026-11-12T18:01:48.000Z",
+   "punkte": 1065,
+   "bild": "bilder/c4b94b713fda1362.jpg",
+   "auszug": "Today, we’re introducing Gemini 4 Hydrogen, our daily driver for agentic workflows"
+  },
+  {
+   "titel": "Anthropic IPO",
+   "link": "https://ipo.anthropic.com/us/",
+   "domain": "ipo.anthropic.com",
+   "datum": "2026-11-12T11:46:41.000Z",
+   "punkte": 996,
+   "bild": "bilder/769419abea6ac9c7.jpg",
+   "auszug": "Anthropic has filed to become a public company. Read the Founders’ letter and other relevant information."
+  },
+  {
+   "titel": "Elevated errors on claude.ai, Claude Code, and platform.claude.com",
+   "link": "https://status.claude.com/incidents/nn11wk485zfn",
+   "domain": "status.claude.com",
+   "datum": "2026-11-13T10:18:13.000Z",
+   "punkte": 488,
+   "bild": "bilder/1cae4aeecaa94b1d.png"
+  },
+  {
+   "titel": "Nvidia allegedly engineered scarcity by funding AI startups to buy its GPUs",
+   "link": "https://www.techpowerup.com/354814/nvidia-allegedly-engineered-scarcity-by-funding-ai-startups-to-buy-its-gpus",
+   "domain": "techpowerup.com",
+   "datum": "2026-11-14T02:52:59.000Z",
+   "punkte": 676,
+   "bild": "bilder/ea8efdf9be213900.jpg",
+   "auszug": "Following the departure of now-former NVIDIA CEO, Jensen Huang, a new report by The Wall Street Journal (via Wccftech) has emerged alleging that NVIDIA artificially inflated the ongoing GPU and memory shortage by…"
+  },
+  {
+   "titel": "Service degradation on Microsoft 365",
+   "link": "https://status.cloud.microsoft/",
+   "domain": "status.cloud.microsoft",
+   "datum": "2026-11-12T18:20:48.000Z",
+   "punkte": 1165
+  },
+  {
+   "titel": "Nvidia employees petition to bring back Jensen Huang",
+   "link": "https://www.wired.com/story/nvidia-employees-petition-for-jensen-huangs-return/",
+   "domain": "wired.com",
+   "datum": "2026-11-13T02:16:24.000Z",
+   "punkte": 804,
+   "bild": "bilder/ee0eddcc4bb05c2e.jpg",
+   "auszug": "An internal post urging the board to consider employee sentiment about Nvidia’s former CEO has drawn more than 1,600 comments, the majority in full support of reinstalling him."
+  },
+  {
+   "titel": "Nvidia is preparing to oust Jensen Huang",
+   "link": "https://www.wsj.com/business/nvidia-is-preparing-to-oust-nvidia-ceo-jensen-huang-30f421ad",
+   "domain": "wsj.com",
+   "datum": "2026-11-11T22:31:06.000Z",
+   "punkte": 1223
+  },
+  {
+   "titel": "Gemini Decisions API",
+   "link": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/",
+   "domain": "blog.google",
+   "datum": "2026-11-11T18:32:42.000Z",
+   "punkte": 568,
+   "bild": "bilder/66ae237942d066a5.png",
+   "auszug": "Meet the Gemini Decisions API, powered by our state-of-the-art model Gemini Decision for fast, calibrated multimodal decisions."
+  },
+  {
+   "titel": "Show HN: My $300 embroidery machine needed a subscription, so I built my own app",
+   "link": "https://github.com/simpsoka/zigzag",
+   "domain": "github.com",
+   "datum": "2026-11-12T17:02:42.000Z",
+   "punkte": 724,
+   "bild": "bilder/ac8e747ede2ca651.png",
+   "auszug": "Free, open-source embroidery software for Mac and Windows. Turn SVG artwork into machine embroidery, edit stitches visually, and create designs with AI agents via MCP. - simpsoka/zigzag"
+  },
+  {
+   "titel": "AWS emulator",
+   "link": "https://github.com/aws/aws-emulator",
+   "domain": "github.com",
+   "datum": "2026-11-11T18:21:38.000Z",
+   "punkte": 987,
+   "bild": "bilder/bb568395d15a9aff.png",
+   "auszug": "AWS Emulator is a local emulator of the AWS APIs. Contribute to aws/aws-emulator development by creating an account on GitHub."
+  },
+  {
+   "titel": "AI unlocks Gödel's notebooks, said to contain hundreds of proved theorems",
+   "link": "https://www.theguardian.com/science/2026/nov/13/kurt-godel-notebooks-ai-helps-unlock-hidden-discoveries-man-who-transformed-maths",
+   "domain": "theguardian.com",
+   "datum": "2026-11-13T17:30:10.000Z",
+   "punkte": 396,
+   "bild": "bilder/e1715d6d9f09b7a3.jpg",
+   "auszug": "Kurt Gödel left 1,009 pages of densely written text – much of it in an obsolete shorthand – which is now said to contain hundreds of proved theorems"
+  }
+ ],
+ "rubriken": [
+  {
+   "name": "Neue Tools",
+   "tage": 60,
+   "anzahl": 8,
+   "eintraege": [
+    {
+     "titel": "Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+     "link": "https://github.com/GoogleChrome/modern-web-guidance",
+     "domain": "github.com",
+     "datum": "2026-11-10T18:01:15.000Z",
+     "punkte": 442,
+     "bild": "bilder/f76fb8009729e720.png",
+     "auszug": "Keep your coding agent up to date with the latest web best practices - GoogleChrome/modern-web-guidance"
+    },
+    {
+     "titel": "Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
+     "link": "https://github.com/devdotfast/whiteboard",
+     "domain": "github.com",
+     "datum": "2026-09-24T17:21:36.000Z",
+     "punkte": 424,
+     "bild": "bilder/04cf95c77b529041.png",
+     "auszug": "open-source canvas for thoughtful software design. Contribute to devdotfast/whiteboard development by creating an account on GitHub."
+    },
+    {
+     "titel": "Let your AI agents paint big arrows, boxes and text on your screen",
+     "link": "https://github.com/franzenzenhofer/big-arrow-on-the-screen",
+     "domain": "github.com",
+     "datum": "2026-10-09T11:03:48.000Z",
+     "punkte": 421,
+     "bild": "bilder/f93a324f8107ee2a.png",
+     "auszug": "Let your AI agents paint big arrows, boxes and text on your Mac screen. One CLI, click-through, gone by itself. Skill for Claude Code and Codex. MIT. - franzenzenhofer/big-arrow-on-the-screen"
+    },
+    {
+     "titel": "Capsule – Single-file web apps that save their data into SQLite",
+     "link": "https://withcapsule.app/",
+     "domain": "withcapsule.app",
+     "datum": "2026-09-15T13:31:40.000Z",
+     "punkte": 380,
+     "bild": "bilder/211693d7c40f9bd7.png",
+     "auszug": "One file, entire app. Share like a document, open like an app."
+    },
+    {
+     "titel": "Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+     "link": "https://llmspeed.dev/",
+     "domain": "llmspeed.dev",
+     "datum": "2026-10-17T04:36:53.000Z",
+     "punkte": 331,
+     "bild": "bilder/6c02625541614908.png",
+     "auszug": "Pick hardware and a model, and feel the real speed of a local LLM before you buy. Simulates tokens/sec and time-to-first-token from verified benchmarks for GPUs, Macs, and more."
+    },
+    {
+     "titel": "OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
+     "link": "https://github.com/ivankovic/omnidiff",
+     "domain": "github.com",
+     "datum": "2026-11-01T13:02:30.000Z",
+     "punkte": 322,
+     "bild": "bilder/353be0aff29d4514.png",
+     "auszug": "Fast, robust, accurate diffing . Contribute to ivankovic/omnidiff development by creating an account on GitHub."
+    },
+    {
+     "titel": "Yogurt – Free, private, open-source alternative to Granola",
+     "link": "https://github.com/FrigadeHQ/yogurt",
+     "domain": "github.com",
+     "datum": "2026-11-11T15:33:06.000Z",
+     "punkte": 301,
+     "bild": "bilder/c48c09934c5fbb2e.png",
+     "auszug": "Private AI meeting notes that stay on your computer. A free, open-source alternative to Granola for Mac, Windows and Linux. - FrigadeHQ/yogurt"
+    },
+    {
+     "titel": "I've updated my Linux System Call website and API",
+     "link": "https://syscall.sh/",
+     "domain": "syscall.sh",
+     "datum": "2026-11-02T09:29:16.000Z",
+     "punkte": 238,
+     "bild": "bilder/0dd93b91f9048ef4.png",
+     "auszug": "The Linux syscall table for 38 architectures: every system call number, argument and register, with a table per architecture, from Linux 3.3 to 7.3."
+    },
+    {
+     "titel": "Petal, open-source CoScreen/ScreenHero finally free",
+     "link": "https://petal.live/",
+     "domain": "petal.live",
+     "datum": "2026-10-14T18:23:14.000Z",
+     "punkte": 228,
+     "bild": "bilder/84150844d53119b6.png",
+     "auszug": "Low latency, high resolution screensharing and remote control."
+    },
+    {
+     "titel": "BetterWispr – Free, open-source dictation for Mac",
+     "link": "https://betterwispr.com/",
+     "domain": "betterwispr.com",
+     "datum": "2026-10-11T12:01:28.000Z",
+     "punkte": 220,
+     "bild": "bilder/088643a4f7757fd4.png",
+     "auszug": "Hold a shortcut, speak, and BetterWispr types clean text into any Mac app. Local speech models, a style for each app, meeting notes and insights. Free and open source, with no account required."
+    },
+    {
+     "titel": "Esp32sim – Run ESP32 firmware in the browser",
+     "link": "https://github.com/mikroverk/esp32sim",
+     "domain": "github.com",
+     "datum": "2026-10-17T13:51:08.000Z",
+     "punkte": 212,
+     "bild": "bilder/3a539c3694612266.png",
+     "auszug": "Open-source ESP32 emulator. Run real firmware locally or in your browser — no hardware, no cloud, no subscription. - mikroverk/esp32sim"
+    },
+    {
+     "titel": "Marelleo, an open-source story box I built for my kids using ESP32",
+     "link": "https://zebra.rodeo/en/blog/marelleo/",
+     "domain": "zebra.rodeo",
+     "datum": "2026-10-27T15:24:36.000Z",
+     "punkte": 195,
+     "bild": "bilder/942b8f8a978369b4.jpg",
+     "auszug": "A box that plays a story when a child puts a figurine on top. Built for my three kids by someone who knew nothing about electronics: the breadboard, the potentiometer that burned, the five enclosures and the printed…"
+    },
+    {
+     "titel": "Magnitude (YC S25) – Self-optimizing inference engine for agents",
+     "link": "https://github.com/magnitudedev/magnitude",
+     "domain": "github.com",
+     "datum": "2026-09-30T17:37:40.000Z",
+     "punkte": 194,
+     "bild": "bilder/9e095d3833f8462d.png",
+     "auszug": "Open source inference engine that tunes its kernels on your hardware to find the fastest way to run each model. 2x faster than Ollama. Works on Apple Silicon, NVIDIA, AMD, Intel, or just a CPU. - m..."
+    },
+    {
+     "titel": "Drop – A rootless Linux sandbox with gVisor support",
+     "link": "https://droprun.sh/",
+     "domain": "droprun.sh",
+     "datum": "2026-09-22T13:52:47.000Z",
+     "punkte": 193,
+     "bild": "bilder/d368b7261d8ba2cf.png",
+     "auszug": "Drop: a rootless Linux sandbox for developers. It isolates coding agents and third-party packages while preserving your work environment."
+    }
+   ]
+  },
+  {
+   "name": "Neue Modelle",
+   "tage": 30,
+   "anzahl": 6,
+   "eintraege": [
+    {
+     "titel": "Claude Fable 5.2 and Mythos 5.2",
+     "link": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+     "domain": "anthropic.com",
+     "datum": "2026-11-09T18:56:29.000Z",
+     "punkte": 1923,
+     "bild": "bilder/b7ae33fda0f79046.jpg",
+     "auszug": "Claude Fable 5.2 and Claude Mythos 5.2, our new models for the hardest technical challenges. Fable 5.2 sets a new bar in coding, finance, and the sciences."
+    },
+    {
+     "titel": "We're releasing the weights of Mistral Large 4",
+     "link": "https://mistral.ai/news/mistral-large-4-oss/",
+     "domain": "mistral.ai",
+     "datum": "2026-10-29T14:13:21.000Z",
+     "punkte": 2059,
+     "bild": "bilder/fdfb71dc9fabe496.jpg",
+     "auszug": "The weights of Mistral Large 4 (Le Chonk) are now open. A 1T parameter multimodal model, and best open-weight model for coding, trained in Europe."
+    },
+    {
+     "titel": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+     "link": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+     "domain": "kimi.ai",
+     "datum": "2026-10-23T16:59:08.000Z",
+     "punkte": 1737,
+     "bild": "bilder/032fd354b90f33ba.webp",
+     "auszug": "Introducing Kimi K3.1 Pro, our most capable 3T-class open-weight model with 1M-token context and major advances in coding, 3D modeling, and financial research."
+    },
+    {
+     "titel": "Gemini 4 Carbon",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+     "domain": "blog.google",
+     "datum": "2026-10-28T17:01:23.000Z",
+     "punkte": 1314,
+     "bild": "bilder/4d97769553719c16.png",
+     "auszug": "Gemini 4 Carbon is our strongest model with state-of-the-art cybersecurity and long horizon capabilities."
+    },
+    {
+     "titel": "Gemini 4 Hydrogen",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+     "domain": "blog.google",
+     "datum": "2026-11-12T18:01:48.000Z",
+     "punkte": 565,
+     "bild": "bilder/c4b94b713fda1362.jpg",
+     "auszug": "Today, we’re introducing Gemini 4 Hydrogen, our daily driver for agentic workflows"
+    },
+    {
+     "titel": "Muse Ember: Our smallest, most efficient model",
+     "link": "https://research.meta.ai/blog/muse-ember",
+     "domain": "research.meta.ai",
+     "datum": "2026-11-09T17:58:46.000Z",
+     "punkte": 334,
+     "bild": "bilder/deca8b95bc012443.webp",
+     "auszug": "Muse Ember is our smallest and most efficient model, designed for complex reasoning execution and the work agents repeat all day."
+    },
+    {
+     "titel": "GPT-6.1 Terra",
+     "link": "https://openai.com/index/introducing-gpt-6-1-terra/",
+     "domain": "openai.com",
+     "datum": "2026-10-26T18:01:17.000Z",
+     "punkte": 638
+    },
+    {
+     "titel": "Gemini Omni 1.2 Flash",
+     "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+     "domain": "blog.google",
+     "datum": "2026-11-06T13:35:27.000Z",
+     "punkte": 369,
+     "bild": "bilder/70f353013fcf4571.png",
+     "auszug": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing."
+    },
+    {
+     "titel": "DeepSeek-v4.1-Flash-1017",
+     "link": "https://huggingface.co/deepseek-ai/DeepSeek-V4.1-Flash-1017",
+     "domain": "huggingface.co",
+     "datum": "2026-10-17T08:21:25.000Z",
+     "punkte": 959,
+     "bild": "bilder/4270fd303ada3803.png",
+     "auszug": "Image-Text-to-Text model with 763B parameters. Download, explore files and run it on Hugging Face."
+    },
+    {
+     "titel": "Krea 3 – An image model built for editing at scale",
+     "link": "https://www.krea.ai/krea-3",
+     "domain": "krea.ai",
+     "datum": "2026-10-15T16:04:05.000Z",
+     "punkte": 353,
+     "bild": "bilder/7e8241f57956285a.webp",
+     "auszug": "Krea 3 is a new image editing model built for production. It keeps your product intact and is priced for volume."
+    },
+    {
+     "titel": "FLUX 3 Image Klein",
+     "link": "https://bfl.ai/blog/flux-3-image-klein",
+     "domain": "bfl.ai",
+     "datum": "2026-10-16T19:47:13.000Z",
+     "punkte": 213,
+     "bild": "bilder/a59f44ff0c1134f5.png",
+     "auszug": "Frontier image quality with the customization and speed of open weights: 5.6B parameters, first in text-to-image, multi-reference generation and editing."
+    }
+   ]
+  }
+ ]
+}
