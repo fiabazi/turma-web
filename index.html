@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'" />
+    <meta name="theme-color" content="#f1efe8" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0d1118" media="(prefers-color-scheme: dark)" />
+    <meta name="description" content="Turma ist ein gemeinsamer Arbeitsplatz fuer Gruppen, die zusammen an Projekten arbeiten. Zugang nur auf Einladung." />
+    <link rel="icon" type="image/png" href="./turma-icon.png" />
+    <!-- Die Startseite hat ihren eigenen Stil (landing.css): Farben, Schrift
+         und Rundungen der App. Datenschutz und Nutzungsbedingungen bleiben
+         bei seite.css, schlicht wie bisher. -->
+    <link rel="stylesheet" href="./landing.css" />
+    <title>Turma — gemeinsamer Arbeitsplatz für Projekte</title>
+  </head>
+  <body>
+    <header class="leiste">
+      <a class="marke" href="#oben"><img src="./turma-icon.png" alt="" width="28" height="28" />Turma</a>
+      <nav aria-label="Auf dieser Seite">
+        <a href="#was">Was es tut</a>
+        <a href="#start">Erster Start</a>
+        <a href="#fragen">Fragen</a>
+      </nav>
+      <a class="knopf klein" href="https://github.com/fiabazi/fiabazi-turma-releases/releases/latest/download/Turma-Setup-2.3.1.exe">Installer laden</a>
+    </header>
+
+    <main id="oben">
+      <!-- Die Bühne: das Wort gross dahinter, das Bild der App leicht
+           gekippt davor, der Download als Glaskarte obenauf. Der Download
+           bleibt im ersten Bildschirm: Wer hierherkommt, hat einen
+           Einladungscode in der Hand und will die Datei. Die
+           Versionsnummer setzt seite-bauen.cjs ein, damit der Link beim
+           naechsten Release nicht auf eine Datei zeigt, die es nicht mehr
+           gibt. -->
+      <section class="buehne">
+        <p class="riesenwort" aria-hidden="true">TURMA</p>
+        <div class="buehne-karte">
+          <h1>Projekte, Lernpfade und Code an einem Ort.</h1>
+          <p>Eine Windows-App für kleine Gruppen. Alle sehen denselben Stand.</p>
+          <a class="knopf wichtig" href="https://github.com/fiabazi/fiabazi-turma-releases/releases/latest/download/Turma-Setup-2.3.1.exe">
+            Installer laden
+          </a>
+          <p class="leise">Windows · Version 2.3.1 · keine Administratorrechte nötig</p>
+        </div>
+        <div class="buehne-bild">
+          <div class="glasrahmen">
+            <img src="./turma-app.png" width="1280" height="800"
+              alt="Turma im dunklen Design: links die Leiste mit Start, Projekte, Kalender, Lernen, Verzeichnis und Code, rechts der Bereich Lernen mit fünf Lernpfaden als Raster." />
+          </div>
+        </div>
+      </section>
+
+      <div class="bento">
+        <section class="zelle zelle-breit" id="was">
+          <h2>Was Turma tut</h2>
+          <p>
+            Turma ist eine Windows-App für kleine Gruppen, die zusammen arbeiten. Darin liegen die
+            Projekte einer Gruppe an einem Ort: Notizen, Aufgaben und Links, für
+            alle sichtbar, die zur Gruppe gehören. Wer die App auf seinem Rechner
+            installiert, sieht denselben Stand wie die anderen.
+          </p>
+          <ul class="zweispaltig">
+            <li>Projekte anlegen und in einer Gruppe teilen</li>
+            <li>Notizen, Aufgaben und Links zu einem Projekt sammeln</li>
+            <li>Lernpfade Schritt für Schritt durchgehen</li>
+            <li>Eigene Repos ansehen, mit dem Git-Befehl zu jedem Knopf</li>
+            <li>Mitschüler per E-Mail-Adresse in eine Gruppe einladen</li>
+            <li>Anmeldung per E-Mail und Passwort oder mit dem Google-Konto</li>
+            <li>Die Windows-App hält sich selbst aktuell</li>
+          </ul>
+        </section>
+
+        <section class="zelle zelle-messing">
+          <h2>Nur auf Einladung</h2>
+          <p>
+            Hier kann sich niemand selbst anmelden. Ein Konto entsteht nur für
+            eine E-Mail-Adresse, für die vorher eine Einladung freigegeben wurde;
+            die Datenbank weist alles andere ab. Ohne Einladung führt die
+            App also nur zum Anmeldeformular und nicht weiter.
+          </p>
+        </section>
+
+        <section class="zelle zelle-halb" id="start">
+          <h2>Erster Start</h2>
+          <!-- Diese zwei Saetze stehen wortgleich im Begleittext, den die App
+               zum Einladungscode erzeugt (src/shared/einladung.ts). Ein Test
+               prueft, dass beide Stellen dasselbe sagen. -->
+          <p>
+            Beim ersten Start warnt Windows vor einem unbekannten Herausgeber, weil Turma nicht signiert ist.
+            Klick auf «<strong>Weitere Informationen</strong>» und dann auf «<strong>Trotzdem ausführen</strong>».
+          </p>
+          <p>
+            Nach dem Installieren brauchst du einen <strong>Einladungscode</strong>.
+            Den bekommst du von der Person, die dich einlädt — Turma ist nicht
+            offen zugänglich. In Turma wählst du dann «Konto anlegen» und gibst
+            den Code ein.
+          </p>
+        </section>
+
+        <section class="zelle zelle-halb zelle-tief">
+          <h2>Was Turma nicht tut</h2>
+          <ul>
+            <li>Keine Werbung, keine Auswertung des Verhaltens, keine Weitergabe von Daten</li>
+            <li>Kein Zugriff auf Google Drive oder andere Dateien im Google-Konto</li>
+            <li>Keine Video- oder Benachrichtigungsfunktionen</li>
+            <li>Kein Dienst, der etwas kostet oder etwas verspricht — siehe die Nutzungsbedingungen</li>
+          </ul>
+        </section>
+
+        <section class="zelle zelle-breit" id="fragen">
+          <h2>Fragen? Frag deine eigene KI</h2>
+          <p>
+            Es gibt eine Textdatei, die Turma vollständig beschreibt — wie man
+            hineinkommt, was die einzelnen Bereiche tun, wer was sieht, und
+            welche Macken bekannt sind. Lade sie herunter und gib sie deinem
+            KI-Assistenten (ChatGPT, Claude, was du benutzt). Danach kannst du
+            dort fragen statt zu suchen.
+          </p>
+          <p>
+            <a class="knopf" href="./turma-fuer-deine-ki.md" download>Wissensdatei herunterladen</a>
+          </p>
+          <p class="leise">
+            Sie ist für eine KI geschrieben, nicht zum Durchlesen — sie enthält
+            auch die Anweisung, bei Unbekanntem ehrlich «weiss ich nicht» zu
+            sagen, statt sich etwas auszudenken.
+          </p>
+        </section>
+
+        <section class="zelle">
+          <h2>Wer dahinter steht</h2>
+          <p>
+            Turma ist ein privates Projekt von Fidan Abazi. Kein Unternehmen,
+            kein kommerzielles Angebot. Fragen,
+            Einladungen und Löschwünsche:
+            <a href="mailto:abazifidan@gmail.com">abazifidan@gmail.com</a>.
+          </p>
+        </section>
+      </div>
+
+      <section class="schluss">
+        <img class="symbol" src="./turma-icon.png" alt="" width="160" height="160" />
+        <div>
+          <h2>Turma holen</h2>
+          <p>
+            Turma gibt es als Windows-App. Einmal installieren, danach
+            kommen Aktualisierungen von selbst. Eine Fassung für den Browser
+            gibt es nicht mehr.
+          </p>
+          <p>
+            <a class="knopf wichtig" href="https://github.com/fiabazi/fiabazi-turma-releases/releases/latest/download/Turma-Setup-2.3.1.exe">Windows-Installer herunterladen</a>
+          </p>
+          <p class="leise">
+            Die EXE ist nicht signiert. Was Windows beim ersten Start meldet und
+            wie es weitergeht, steht oben unter «Erster Start».
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a href="./datenschutz.html">Datenschutzerklärung</a>
+      <a href="./nutzungsbedingungen.html">Nutzungsbedingungen</a>
+      <a href="https://github.com/fiabazi/fiabazi-turma-releases/releases/latest">Alle Versionen</a>
+    </footer>
+  </body>
+</html>

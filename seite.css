@@ -1,0 +1,99 @@
+/* Die drei oeffentlichen Seiten. Kein JavaScript, eine Datei Stil.
+   Google ruft diese Seiten maschinell ab; sie muessen auch dann lesbar
+   sein, wenn nichts laeuft ausser HTML und CSS. */
+:root {
+  --grund: #f2f2f7;
+  --flaeche: #ffffff;
+  --rand: #d8d8e0;
+  --text: #1c1c1e;
+  --leise: #5a5a66;
+  --akzent: #2f4f8f;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --grund: #16161a;
+    --flaeche: #1f1f25;
+    --rand: #33333d;
+    --text: #f2f2f7;
+    --leise: #a3a3b0;
+    --akzent: #9ab4ea;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 2.5rem 1rem 4rem;
+  background: var(--grund);
+  color: var(--text);
+  font: 16px/1.65 -apple-system, "Segoe UI", system-ui, sans-serif;
+}
+main { max-width: 42rem; margin: 0 auto; }
+header.kopf { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 2rem; }
+header.kopf img { width: 44px; height: 44px; border-radius: 10px; }
+header.kopf p { margin: 0; color: var(--leise); font-size: 0.95rem; }
+h1 { font-size: 1.75rem; line-height: 1.25; margin: 0 0 0.25rem; }
+h2 { font-size: 1.15rem; margin: 2.25rem 0 0.5rem; }
+h3 { font-size: 1rem; margin: 1.5rem 0 0.25rem; }
+p, ul { margin: 0.75rem 0; }
+ul { padding-left: 1.25rem; }
+li { margin: 0.3rem 0; }
+a { color: var(--akzent); }
+.kasten {
+  background: var(--flaeche);
+  border: 1px solid var(--rand);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+.knoepfe { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0; }
+.knopf {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  border-radius: 10px;
+  border: 1px solid var(--rand);
+  background: var(--flaeche);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+}
+.knopf.wichtig { background: var(--akzent); border-color: var(--akzent); color: #ffffff; }
+@media (prefers-color-scheme: dark) { .knopf.wichtig { color: #16161a; } }
+footer {
+  margin-top: 3rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rand);
+  color: var(--leise);
+  font-size: 0.9rem;
+}
+footer a { margin-right: 1rem; }
+dt { font-weight: 600; margin-top: 0.75rem; }
+dd { margin: 0.15rem 0 0 0; color: var(--leise); }
+
+/* --- Download ------------------------------------------------------------
+   Das Erste auf der Seite, und als Block erkennbar: wer hierherkommt, hat
+   einen Code in der Hand und will die Datei. */
+.holen {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 0 1.5rem;
+  padding: 1.5rem;
+  border-radius: 18px;
+  background: linear-gradient(135deg, var(--flaeche), var(--grund));
+  border: 1px solid var(--rand);
+}
+.holen h2 { margin: 0 0 0.25rem; font-size: 1.25rem; }
+.holen .leise { margin: 0; color: var(--leise); font-size: 0.875rem; }
+.knopf {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 999px;
+  background: var(--akzent);
+  color: var(--grund);
+  font-weight: 600;
+  text-decoration: none;
+}
+.knopf:hover { filter: brightness(1.08); }
+.leise-kasten { font-size: 0.9rem; }

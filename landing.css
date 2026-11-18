@@ -1,0 +1,246 @@
+/* Die Download-Seite (index.html). Kein JavaScript, eine Datei Stil.
+   Datenschutz und Nutzungsbedingungen bleiben bei seite.css.
+
+   Farben, Schrift und Rundungen sind die der App (src/renderer/src/style.css):
+   hell ist Papier, dunkel ist Tinte auf Marine; Messing sagt, was du tun
+   kannst. Die Werte stehen hier ausgeschrieben, weil die Seite fuer sich
+   gebaut und ausgeliefert wird.
+
+   Vier Mittel, jedes an genau einer Stelle:
+   - Riesenschrift: das Wort „TURMA" hinter der Bühne, reine Zierde.
+   - Glas: der Rahmen um das Bild der App, die Download-Karte, die Leiste.
+     Darunter liegen nur eigene, feste Gründe (Wort, Lichtflecken, das
+     eigene Bild), damit der Kontrast berechenbar bleibt.
+   - Weiches 3D: das gekippte Bild und das Symbol am Schluss, nur aus
+     Neigung und mehrlagigen Schatten.
+   - Bento: die Zellen darunter, verschieden gross und verschieden getönt. */
+:root {
+  color-scheme: light dark;
+  --schrift-marke: Bahnschrift, 'Segoe UI Variable Display', 'Segoe UI', system-ui, sans-serif;
+  --schrift-text: 'Segoe UI Variable Text', 'Segoe UI', system-ui, sans-serif;
+
+  --grund: #f1efe8;
+  --flaeche: #fbfaf6;
+  --tief: #e6e3d9;
+  --text: #1a1c20;
+  --leise: #55585d;
+  --linie: #cfcbbe;
+  --messing: #6e5210;
+  --messing-hover: #5a420b;
+  --messing-weich: #f0e7ce;
+  --auf-messing: #ffffff;
+  --verweis: #7a5a10;
+  --fleck-blau: #1d346126;
+  --fleck-messing: #9a731833;
+  --wort: #1a1c2014;
+  --glas: #fbfaf6b8;
+  --glas-dicht: #fbfaf6e6;
+  --glas-rand: #ffffffb3;
+  --schatten: 26 28 32;
+
+  --rund: 14px;
+  --rund-gross: 24px;
+  --auslauf: cubic-bezier(.16, 1, .3, 1);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --grund: #0d1118;
+    --flaeche: #171b23;
+    --tief: #11151c;
+    --text: #eceae2;
+    --leise: #a3a9b3;
+    --linie: #2c323d;
+    --messing: #d9a93c;
+    --messing-hover: #e8bc57;
+    --messing-weich: #d9a93c24;
+    --auf-messing: #151619;
+    --verweis: #e0b450;
+    --fleck-blau: #2f58a84d;
+    --fleck-messing: #d9a93c26;
+    --wort: #eceae212;
+    --glas: #171b23b3;
+    --glas-dicht: #171b23e6;
+    --glas-rand: #ffffff24;
+    --schatten: 0 0 0;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body {
+  margin: 0;
+  background: var(--grund);
+  color: var(--text);
+  font: 1rem/1.6 var(--schrift-text);
+  overflow-x: clip;
+}
+::selection { background: var(--messing); color: var(--auf-messing); }
+a { color: var(--verweis); text-underline-offset: .18em; }
+:focus-visible { outline: 2px solid var(--messing); outline-offset: 3px; border-radius: 6px; }
+h1, h2 { margin: 0; font-family: var(--schrift-marke); line-height: 1.15; text-wrap: balance; }
+h2 { font-size: 1.375rem; font-weight: 600; }
+p, ul { margin: .75rem 0 0; }
+ul { padding-left: 1.2rem; }
+li { margin: .3rem 0; }
+li::marker { color: var(--messing); }
+.leise { color: var(--leise); font-size: .875rem; }
+
+/* --- Knöpfe ---------------------------------------------------------------- */
+.knopf {
+  display: inline-flex; align-items: center; justify-content: center;
+  min-height: 44px; padding: .625rem 1.25rem;
+  border: 1px solid var(--linie); border-radius: 999px;
+  background: var(--flaeche); color: var(--text);
+  font-family: var(--schrift-marke); font-weight: 600; text-decoration: none;
+  transition: background-color 160ms var(--auslauf), transform 160ms var(--auslauf);
+}
+.knopf:hover { background: var(--tief); }
+.knopf:active { transform: scale(.97); }
+.knopf.wichtig { border-color: transparent; background: var(--messing); color: var(--auf-messing);
+  box-shadow: 0 1px 0 #ffffff40 inset, 0 2px 4px rgb(var(--schatten) / .18), 0 10px 22px -10px rgb(var(--schatten) / .45); }
+.knopf.wichtig:hover { background: var(--messing-hover); }
+.knopf.klein { min-height: 36px; padding: .375rem .875rem; font-size: .875rem; }
+
+/* --- Leiste oben: eine Glaspille ------------------------------------------- */
+.leiste {
+  position: sticky; top: .75rem; z-index: 10;
+  display: flex; align-items: center; gap: 1rem;
+  width: min(72rem, calc(100% - 2rem)); margin: .75rem auto 0; padding: .375rem .375rem .375rem .875rem;
+  border: 1px solid var(--glas-rand); border-radius: 999px;
+  background: var(--glas); backdrop-filter: blur(16px) saturate(1.2);
+  box-shadow: 0 1px 2px rgb(var(--schatten) / .08), 0 10px 28px -16px rgb(var(--schatten) / .4);
+}
+.marke { display: inline-flex; align-items: center; gap: .5rem; color: var(--text);
+  font-family: var(--schrift-marke); font-weight: 700; font-size: 1.0625rem; text-decoration: none; }
+.marke img { border-radius: 7px; }
+.leiste nav { display: flex; gap: .25rem; margin-left: auto; }
+.leiste nav a { padding: .375rem .75rem; border-radius: 999px; color: var(--text); font-size: .875rem; text-decoration: none; }
+.leiste nav a:hover { background: rgb(var(--schatten) / .07); }
+@media (prefers-color-scheme: dark) { .leiste nav a:hover { background: #ffffff14; } }
+
+/* --- Bühne ----------------------------------------------------------------- */
+main { width: min(72rem, calc(100% - 2rem)); margin: 0 auto; }
+.buehne {
+  position: relative; display: grid; justify-items: center;
+  padding: clamp(.5rem, 1.5vw, 1.25rem) 0 clamp(3rem, 7vw, 6rem);
+}
+/* Zwei weiche Lichtflecken in den Farben des Symbols: Marine und Messing. */
+.buehne::before {
+  content: ''; position: absolute; z-index: -1; inset: -6rem calc(50% - 50vw) 0;
+  background:
+    radial-gradient(42rem 28rem at 30% 38%, var(--fleck-blau), transparent 70%),
+    radial-gradient(36rem 24rem at 72% 62%, var(--fleck-messing), transparent 70%);
+}
+/* Das Wort ist Zierde: aria-hidden im HTML, keine Information. Es wächst
+   mit der Breite; die Überschrift der Seite ist die h1 in der Karte. */
+.riesenwort {
+  margin: 0; max-width: 100%; overflow: clip; white-space: nowrap; user-select: none;
+  font-family: var(--schrift-marke); font-weight: 700; font-stretch: 85%;
+  font-size: clamp(5.5rem, 25vw, 19rem); line-height: .82; letter-spacing: -.01em;
+  color: var(--wort);
+}
+/* Das Bild der App, leicht nach hinten gekippt. Der Rahmen ist Glas: Durch
+   ihn scheint das Wort dahinter, unscharf. */
+.buehne-bild { width: min(52rem, 100%); margin-top: clamp(-5.5rem, -6.5vw, -1.5rem); perspective: 1800px; }
+.glasrahmen {
+  padding: clamp(.375rem, 1vw, .75rem);
+  border: 1px solid var(--glas-rand); border-radius: calc(var(--rund-gross) + .75rem);
+  background: linear-gradient(145deg, #ffffff3d, #ffffff0f 45%, #ffffff24);
+  backdrop-filter: blur(14px) saturate(1.25);
+  transform: rotateX(9deg) rotateY(-5deg) rotateZ(.6deg); transform-origin: 50% 100%;
+  box-shadow:
+    0 1px 0 #ffffff59 inset,
+    0 2px 3px rgb(var(--schatten) / .12),
+    0 14px 24px -10px rgb(var(--schatten) / .28),
+    0 46px 70px -28px rgb(var(--schatten) / .5),
+    0 90px 120px -50px rgb(var(--schatten) / .45);
+}
+.glasrahmen img { display: block; width: 100%; height: auto; border-radius: var(--rund-gross); }
+/* Der eine Moment Bewegung: Das Bild legt sich beim Laden in seine Neigung. */
+@media (prefers-reduced-motion: no-preference) {
+  .glasrahmen { animation: hinlegen 900ms var(--auslauf) both; }
+  @keyframes hinlegen { from { transform: rotateX(20deg) rotateY(-9deg) rotateZ(1.2deg) translateY(1.5rem); } }
+}
+/* Die Download-Karte liegt vorn links auf dem Bild. Fast deckend, damit der
+   Text über dem Bild sicher lesbar bleibt. */
+.buehne-karte {
+  position: relative; z-index: 2; order: 3; justify-self: start;
+  width: min(27rem, 100%); margin-top: clamp(-17rem, -19vw, -3rem); margin-left: clamp(0rem, 2vw, 1.5rem);
+  padding: 1.5rem;
+  border: 1px solid var(--glas-rand); border-radius: var(--rund-gross);
+  background: var(--glas-dicht); backdrop-filter: blur(18px) saturate(1.2);
+  box-shadow: 0 1px 0 #ffffff40 inset, 0 2px 4px rgb(var(--schatten) / .1), 0 24px 48px -20px rgb(var(--schatten) / .5);
+}
+.buehne-karte h1 { font-size: clamp(1.625rem, 1.2rem + 1.6vw, 2.25rem); font-weight: 700; }
+.buehne-karte .knopf { margin-top: 1.125rem; }
+.buehne-karte .leise { margin-top: .625rem; }
+
+/* --- Bento ----------------------------------------------------------------- */
+.bento { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 1rem; }
+.zelle {
+  grid-column: span 2; padding: clamp(1.25rem, 2.2vw, 2rem);
+  border: 1px solid var(--linie); border-radius: var(--rund-gross);
+  background: var(--flaeche);
+}
+.zelle-breit { grid-column: span 4; }
+.zelle-halb { grid-column: span 3; }
+.zelle-messing { border-color: transparent; background: var(--messing-weich); }
+.zelle-tief { background: var(--tief); }
+.zelle p, .zelle li { max-width: 68ch; }
+.zweispaltig { columns: 2 16rem; column-gap: 2.5rem; }
+.zweispaltig li { break-inside: avoid; }
+@media (max-width: 56rem) {
+  .zelle, .zelle-breit, .zelle-halb { grid-column: 1 / -1; }
+}
+
+/* --- Schluss: das Symbol in weichem 3D ------------------------------------- */
+.schluss {
+  display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: clamp(1.5rem, 5vw, 4rem);
+  margin: clamp(3rem, 7vw, 6rem) 0 0; padding: clamp(1.5rem, 4vw, 3rem);
+  border-radius: calc(var(--rund-gross) + .5rem);
+  background:
+    radial-gradient(30rem 18rem at 12% 50%, var(--fleck-blau), transparent 70%),
+    var(--tief);
+}
+.schluss p { max-width: 60ch; }
+.symbol {
+  width: clamp(6rem, 16vw, 10rem); height: auto; border-radius: 22%;
+  transform: perspective(900px) rotateX(10deg) rotateY(-14deg) rotateZ(-3deg);
+  box-shadow:
+    0 1px 0 #ffffff66 inset,
+    0 3px 4px rgb(var(--schatten) / .2),
+    0 16px 22px -8px rgb(var(--schatten) / .35),
+    0 40px 50px -22px rgb(var(--schatten) / .55);
+}
+@media (max-width: 40rem) { .schluss { grid-template-columns: minmax(0, 1fr); } }
+
+footer {
+  display: flex; flex-wrap: wrap; gap: .5rem 1.5rem;
+  width: min(72rem, calc(100% - 2rem)); margin: 3rem auto 0; padding: 1.25rem 0 3rem;
+  border-top: 1px solid var(--linie); font-size: .875rem;
+}
+footer a { color: var(--leise); }
+
+/* --- Schmal ---------------------------------------------------------------- */
+@media (max-width: 44rem) {
+  .leiste nav { display: none; }
+  .leiste .knopf { margin-left: auto; }
+  /* Karte zuerst und in voller Breite, das Bild darunter, weniger gekippt. */
+  .buehne-karte { order: 0; width: 100%; margin: clamp(-3rem, -9vw, -1.5rem) 0 0; }
+  .buehne-bild { margin-top: 1.5rem; }
+  .glasrahmen { transform: rotateX(6deg); }
+}
+
+/* --- Wer weniger Durchsicht, mehr Kontrast oder feste Farben will ---------- */
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+  .leiste, .buehne-karte { background: var(--flaeche); backdrop-filter: none; border-color: var(--linie); }
+  .glasrahmen { background: var(--tief); backdrop-filter: none; border-color: var(--linie); }
+}
+@media (forced-colors: active) {
+  .leiste, .buehne-karte, .glasrahmen, .zelle, .schluss, .knopf { border: 1px solid CanvasText; backdrop-filter: none; }
+  .riesenwort { display: none; }
+}
+@media print {
+  .leiste, .riesenwort { display: none; }
+  .glasrahmen { transform: none; box-shadow: none; }
+}
