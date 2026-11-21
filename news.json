@@ -1,0 +1,515 @@
+{
+ "stand": "2026-11-21T13:32:18.068Z",
+ "beitraege": [
+  {
+   "titel": "The making of Anthropic",
+   "quelle": "Anthropic",
+   "was": "Der Kanal des Labors hinter Claude. Meldet sich selten, dann meist zu einem neuen Modell.",
+   "rang": 1,
+   "bild": "bilder/5d1ab641c579e275.jpg",
+   "datum": "2026-11-19T21:03:23.000Z",
+   "link": "https://www.youtube.com/watch?v=sof3vW4mHTs",
+   "teaser": ""
+  },
+  {
+   "titel": "Introducing Gemini 4 Neon",
+   "quelle": "Google DeepMind",
+   "was": "Das KI-Labor von Google. Hier stehen ihre neuen Modelle und Forschungsarbeiten.",
+   "rang": 1,
+   "bild": "bilder/94937997ce91c530.png",
+   "datum": "2026-11-18T21:35:43.000Z",
+   "link": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+   "teaser": ""
+  },
+  {
+   "titel": "Understanding Positional Embeddings in Modern LLMs",
+   "quelle": "Sebastian Raschka",
+   "was": "Schreibt das Buch 'LLM from Scratch'. Baut Sprachmodelle Schritt fuer Schritt auseinander.",
+   "rang": 1,
+   "bild": "bilder/927f035f278e6f05.png",
+   "datum": "2026-11-15T12:10:37.000Z",
+   "link": "https://magazine.sebastianraschka.com/p/understanding-positional-embeddings",
+   "teaser": "The Methods Behind How LLMs Represent Token Positions"
+  },
+  {
+   "titel": "Das bessere Steam Deck?",
+   "quelle": "c't 3003",
+   "was": "Auf Deutsch. Der Technikkanal von c't probiert Geraete und KI-Werkzeuge aus und sagt, was davon zu halten ist.",
+   "rang": 2,
+   "bild": "bilder/efc6bfb68d622cf2.jpg",
+   "datum": "2026-11-20T15:00:21.000Z",
+   "link": "https://www.youtube.com/watch?v=h9FnoG8xPCU",
+   "teaser": ""
+  },
+  {
+   "titel": "Vals Misalignment Incidents: Towards understanding misaligned agent behavior",
+   "quelle": "Vals AI",
+   "was": "Misst, welches Modell in echten Aufgaben wirklich das beste ist.",
+   "rang": 2,
+   "bild": "bilder/3321fdd927da0f5a.jpg",
+   "datum": "2026-11-20T12:00:00.000Z",
+   "link": "https://www.vals.ai/blogs/misalignment-incidents",
+   "teaser": "We're starting to report incidents we see across models, starting with our own evaluations."
+  },
+  {
+   "titel": "Running the full server-side Datasette Python app in the browser with service workers and Pyodide",
+   "quelle": "Simon Willison",
+   "was": "Probiert jedes neue Modell an echtem Code aus und schreibt auf, was dabei wirklich herauskommt.",
+   "rang": 2,
+   "bild": "bilder/c894564d0b1bb328.webp",
+   "datum": "2026-11-17T16:48:33.000Z",
+   "link": "https://simonwillison.net/2026/Nov/17/datasette-lite/",
+   "teaser": ""
+  },
+  {
+   "titel": "Paul Christiano – We could be 12 months away from AIs that can overthrow the government",
+   "quelle": "Dwarkesh Patel",
+   "was": "Podcast. Lange Gespraeche mit den Leuten, die KI tatsaechlich bauen.",
+   "rang": 2,
+   "bild": "bilder/e553d253ed81bacf.jpg",
+   "datum": "2026-11-16T17:46:28.000Z",
+   "link": "https://www.dwarkesh.com/p/paul-christiano-2",
+   "teaser": "Watch now (99 mins) | \"It would be hard for humanity to recover.\""
+  },
+  {
+   "titel": "Import AI 481: AI sub-contractors; a wet lab for AI; and subterfuge during development",
+   "quelle": "Import AI",
+   "was": "Woechentlicher Brief von Jack Clark, Mitgruender von Anthropic. Fasst neue Forschungsarbeiten zusammen und ordnet sie ein.",
+   "rang": 2,
+   "bild": "bilder/10f2e9edd04e0f85.png",
+   "datum": "2026-11-16T14:01:15.000Z",
+   "link": "https://jack-clark.net/2026/11/16/import-ai-481-ai-sub-contractors-a-wet-lab-for-ai-and-subterfuge-during-development/",
+   "teaser": "Welcome to Import AI, a newsletter about AI research. Import AI runs on arXiv, cappuccinos, and feedback from readers. If you’d like to support this, please subscribe. Subscribe now AI systems are getting good at…"
+  },
+  {
+   "titel": "OpenRouter Now Powers Inference on Hugging Face",
+   "quelle": "OpenRouter",
+   "was": "Eine Schnittstelle fuer alle Modelle. Schreibt ueber neue Modelle und darueber, wie man sie benutzt.",
+   "rang": 2,
+   "bild": "bilder/55397541e6ffb42d.jpg",
+   "datum": "2026-11-16T00:00:00.000Z",
+   "link": "https://openrouter.ai/blog/announcements/hugging-face-inference-providers/",
+   "teaser": "Chat models on Hugging Face Inference Providers now run through OpenRouter's routing, and OpenRouter can send your traces to a Hugging Face Storage Bucket."
+  },
+  {
+   "titel": "v2.1.330",
+   "quelle": "Claude Code",
+   "was": "Was sich an Claude Code aendert -- dem Werkzeug, mit dem Turma gebaut wird. Versionshinweise, mehrmals pro Woche.",
+   "rang": 3,
+   "bild": "bilder/6cec937a1c4cf8a6.png",
+   "datum": "2026-11-20T22:32:56.000Z",
+   "link": "https://github.com/anthropics/claude-code/releases/tag/v2.1.330",
+   "teaser": "What's changed Added sign-in to organizations managed in Anthropic's Enterprise Admin Console: after claude auth login , Claude Code applies the organization's settings and uses its cloud provider or gateway Added…"
+  },
+  {
+   "titel": "Google rolls out new search homepage with AI chat history and no search button",
+   "quelle": "Ars Technica",
+   "was": "Technikredaktion mit langer Erfahrung, hier nur die KI-Meldungen. Prueft Behauptungen nach, statt sie weiterzugeben.",
+   "rang": 3,
+   "bild": "bilder/f3c2cc99d50d7203.jpg",
+   "datum": "2026-11-20T21:58:29.000Z",
+   "link": "https://arstechnica.com/ai/2026/11/googles-latest-search-page-redesign-drops-the-search-button-adds-ai-sidebar/",
+   "teaser": "Google search is making it even easier to access AI tools on the search page."
+  },
+  {
+   "titel": "AI incidents of 2026: Rogue agents, stolen keys, and other familiar stories",
+   "quelle": "Aikido Security",
+   "was": "Sicherheitsluecken in Bibliotheken, die man selbst benutzt.",
+   "rang": 3,
+   "bild": "bilder/8aa288dc72f89ab3.png",
+   "datum": "2026-11-19T16:04:00.000Z",
+   "link": "https://www.aikido.dev/blog/ai-incidents-root-causes-patterns",
+   "teaser": "We reviewed 50 AI-related security incidents from 2026. Most came down to exposed secrets, over-scoped access, weak isolation and compromised vendors. Category: News"
+  }
+ ],
+ "kanalbilder": {
+  "https://www.youtube.com/@elenaonoffline": "bilder/77d5e5b1765da469.jpg",
+  "https://www.youtube.com/@ct3003": "bilder/ac99a97bb520f4e7.jpg",
+  "https://www.heise.de/": "bilder/3688881ab86ea2d7.png",
+  "https://www.youtube.com/@NetworkChuck": "bilder/a562245b090cbe81.jpg",
+  "https://www.youtube.com/@LinusTechTips": "bilder/8c52ce3bc2614e90.jpg",
+  "https://www.tiktok.com/@rowancheung": "bilder/2dc35e4bc13c0105.jpg",
+  "https://www.youtube.com/@AndrejKarpathy": "bilder/6a387a5e6d12af27.jpg",
+  "https://www.dwarkesh.com/": "bilder/56e669fec1bb905e.jpg",
+  "https://magazine.sebastianraschka.com/": "bilder/7e55b52cdb8d5974.png",
+  "https://arstechnica.com/": "bilder/4551baa73cb5f265.png",
+  "https://world.hey.com/dhh": "bilder/ded7c956c5cc03d0.jpg"
+ },
+ "kanalvideos": {
+  "https://www.youtube.com/@elenaonoffline": {
+   "titel": "Why Did the Midterms Scare the AI Markets?",
+   "link": "https://www.youtube.com/watch?v=k7DU6hDM2XU",
+   "datum": "2026-11-06T16:23:30.000Z",
+   "bild": "bilder/c02d86b687a74e40.jpg"
+  },
+  "https://www.youtube.com/@ct3003": {
+   "titel": "Das bessere Steam Deck?",
+   "link": "https://www.youtube.com/watch?v=h9FnoG8xPCU",
+   "datum": "2026-11-20T15:00:21.000Z",
+   "bild": "bilder/6f925d0d5dfcfe17.jpg"
+  },
+  "https://www.youtube.com/@NetworkChuck": {
+   "titel": "How to Actually Code with AI (ft. Matt Pocock)",
+   "link": "https://www.youtube.com/watch?v=mU8WKII1gpk",
+   "datum": "2026-11-20T17:25:28.000Z",
+   "bild": "bilder/090a29d49e3db9f9.jpg"
+  },
+  "https://www.youtube.com/@LinusTechTips": {
+   "titel": "I Played GTA VI at 60 FPS",
+   "link": "https://www.youtube.com/watch?v=f0KK_4AaqLQ",
+   "datum": "2026-11-20T15:12:44.000Z",
+   "bild": "bilder/736871396da974b5.jpg"
+  },
+  "https://www.dwarkesh.com/": {
+   "titel": "AIs might overthrow the government within a year – Paul Christiano",
+   "link": "https://www.youtube.com/watch?v=SyHM5hNPAEo",
+   "datum": "2026-11-16T18:08:23.000Z",
+   "bild": "bilder/143c7db6020203f7.jpg"
+  }
+ },
+ "schlagzeilen": [
+  {
+   "titel": "Inkling 2 Mini",
+   "link": "https://thinkingmachines.ai/news/inkling-2-mini/",
+   "domain": "thinkingmachines.ai",
+   "datum": "2026-11-20T20:12:19.000Z",
+   "punkte": 1114,
+   "bild": "bilder/f83ad292323551ce.png",
+   "auszug": "Inkling 2 Mini is an open-weights model small enough to run on your laptop. It loops its middle layers to reason more per token and reach answers in fewer tokens."
+  },
+  {
+   "titel": "Gemini 4 Neon",
+   "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+   "domain": "blog.google",
+   "datum": "2026-11-18T21:34:07.000Z",
+   "punkte": 1056,
+   "bild": "bilder/94937997ce91c530.png",
+   "auszug": "Today, we’re introducing Gemini 4 Neon"
+  },
+  {
+   "titel": "Anthropic’s Nasdaq debut",
+   "link": "https://www.reuters.com/business/finance/anthropics-historic-debut-put-ais-promise-peril-wall-st-test-2026-11-19/",
+   "domain": "reuters.com",
+   "datum": "2026-11-19T17:02:40.000Z",
+   "punkte": 1134
+  },
+  {
+   "titel": "Claude solves two open problems in the physics of black holes",
+   "link": "https://www.anthropic.com/research/claude-black-hole-physics",
+   "domain": "anthropic.com",
+   "datum": "2026-11-19T17:30:44.000Z",
+   "punkte": 560,
+   "bild": "bilder/2de71647629a8fdb.jpg",
+   "auszug": "Claude Fable 5.2 has solved two open problems in theoretical physics. Both concern black holes and the search for a theory of quantum gravity."
+  },
+  {
+   "titel": "Why there are still no non-WebKit browsers on iOS",
+   "link": "https://blog.mozilla.org/en/mozilla/internet-policy/apple-ios-browser-engine-rules/",
+   "domain": "blog.mozilla.org",
+   "datum": "2026-11-20T15:03:31.000Z",
+   "punkte": 360,
+   "bild": "bilder/2ee570ba5dd3f8e5.png",
+   "auszug": "Firefox on iPhone is growing fast across the world. This is especially true in the EU since 2024, when the EU Digital Markets Act (DMA) started requiring A"
+  },
+  {
+   "titel": "Frostbite: A new CPU architecture discovered, designed and verified by AI",
+   "link": "https://architectlabs.com/blog/frostbite",
+   "domain": "architectlabs.com",
+   "datum": "2026-11-20T10:01:41.000Z",
+   "punkte": 651,
+   "bild": "bilder/11f6f23258bb061a.jpg",
+   "auszug": "Frostbite is a general-purpose CPU built around interaction nets, discovered, designed, and verified end-to-end by our AI systems, reaching 4.59x the performance-per-watt of a modern superscalar (dual-issue, in-order)…"
+  },
+  {
+   "titel": "Restricting AI agents in mobile operating systems platforms from capturing data",
+   "link": "https://signal.org/blog/protecting-your-privacy/",
+   "domain": "signal.org",
+   "datum": "2026-11-20T09:42:16.000Z",
+   "punkte": 556,
+   "bild": "bilder/95eb85f59669d7bb.png",
+   "auszug": "Privacy is our mission; it’s why we exist, and we do everything we can to protect it. This means that we are restricting the latest AI agents built into mobile operating systems from potentially capturing and storing…"
+  },
+  {
+   "titel": "UK government forced to admit it issued Apple a secret encryption order",
+   "link": "https://macanorak.com/uk-government-forced-to-admit-it-issued-apple-a-secret-encryption-order/",
+   "domain": "macanorak.com",
+   "datum": "2026-11-19T16:21:03.000Z",
+   "punkte": 690,
+   "bild": "bilder/615b84959913096a.jpg",
+   "auszug": "The Investigatory Powers Tribunal has rejected the UK government’s attempt to keep its order secret, marking a significant victory for transparency."
+  },
+  {
+   "titel": "Language Models Can Rewrite Their Own Weights",
+   "link": "https://arxiv.org/abs/2611.21885",
+   "domain": "arxiv.org",
+   "datum": "2026-11-20T16:29:06.000Z",
+   "punkte": 430,
+   "bild": "bilder/5c6cc6e79887be3e.png",
+   "auszug": "A language model is trained once and frozen. Making it better takes another training run, or a prompt, a harness or extra computation at inference that is gone once the task ends. We show a third way: to our knowledge…"
+  },
+  {
+   "titel": "Google is pushing OEMs against GrapheneOS and bootloader unlocking",
+   "link": "https://grapheneos.social/@GrapheneOS/117645038299496084",
+   "domain": "grapheneos.social",
+   "datum": "2026-11-20T05:21:02.000Z",
+   "punkte": 499,
+   "auszug": "Google is sabotaging their OEM partners by making a growing number of features and updates exclusive to Pixels. At the same time, Google is trying to convince OEM partners not to support GrapheneOS or even bootloader…"
+  },
+  {
+   "titel": "Fuck Your AI Safeguards",
+   "link": "https://ounapuu.ee/posts/2026/11/19/unsafeguards/",
+   "domain": "ounapuu.ee",
+   "datum": "2026-11-19T16:30:18.000Z",
+   "punkte": 609,
+   "bild": "bilder/bcf6960c995d4d86.jpg",
+   "auszug": "You can't tell me that you found a security issue in my product and then refuse to fix it."
+  },
+  {
+   "titel": "Anthropic prices initial public offering",
+   "link": "https://www.anthropic.com/news/anthropic-prices-initial-public-offering",
+   "domain": "anthropic.com",
+   "datum": "2026-11-18T23:30:09.000Z",
+   "punkte": 421,
+   "bild": "bilder/9778f9f66abd64d8.jpg",
+   "auszug": "Today Anthropic, PBC priced its initial public offering of its Class A common stock."
+  }
+ ],
+ "rubriken": [
+  {
+   "name": "Neue Tools",
+   "tage": 60,
+   "anzahl": 8,
+   "eintraege": [
+    {
+     "titel": "Get your coding agent off ~2019 JavaScript, onto modern web primitives",
+     "link": "https://github.com/GoogleChrome/modern-web-guidance",
+     "domain": "github.com",
+     "datum": "2026-11-10T18:01:15.000Z",
+     "punkte": 449,
+     "auszug": "Keep your coding agent up to date with the latest web best practices - GoogleChrome/modern-web-guidance"
+    },
+    {
+     "titel": "Whiteboard (YC W26) – An open-source IDE for thoughtful software design",
+     "link": "https://github.com/devdotfast/whiteboard",
+     "domain": "github.com",
+     "datum": "2026-09-24T17:21:36.000Z",
+     "punkte": 424,
+     "bild": "bilder/04cf95c77b529041.png",
+     "auszug": "open-source canvas for thoughtful software design. Contribute to devdotfast/whiteboard development by creating an account on GitHub."
+    },
+    {
+     "titel": "Let your AI agents paint big arrows, boxes and text on your screen",
+     "link": "https://github.com/franzenzenhofer/big-arrow-on-the-screen",
+     "domain": "github.com",
+     "datum": "2026-10-09T11:03:48.000Z",
+     "punkte": 421,
+     "auszug": "Let your AI agents paint big arrows, boxes and text on your Mac screen. One CLI, click-through, gone by itself. Skill for Claude Code and Codex. MIT. - franzenzenhofer/big-arrow-on-the-screen"
+    },
+    {
+     "titel": "Llmspeed – feel how fast a local LLM runs before you buy the hardware",
+     "link": "https://llmspeed.dev/",
+     "domain": "llmspeed.dev",
+     "datum": "2026-10-17T04:36:53.000Z",
+     "punkte": 331,
+     "bild": "bilder/6c02625541614908.png",
+     "auszug": "Pick hardware and a model, and feel the real speed of a local LLM before you buy. Simulates tokens/sec and time-to-first-token from verified benchmarks for GPUs, Macs, and more."
+    },
+    {
+     "titel": "OmniDiff – Opensource, super fast, content aware Git difftool, in Rust",
+     "link": "https://github.com/ivankovic/omnidiff",
+     "domain": "github.com",
+     "datum": "2026-11-01T13:02:30.000Z",
+     "punkte": 322,
+     "bild": "bilder/353be0aff29d4514.png",
+     "auszug": "Fast, robust, accurate diffing . Contribute to ivankovic/omnidiff development by creating an account on GitHub."
+    },
+    {
+     "titel": "Yogurt – Free, private, open-source alternative to Granola",
+     "link": "https://github.com/FrigadeHQ/yogurt",
+     "domain": "github.com",
+     "datum": "2026-11-11T15:33:06.000Z",
+     "punkte": 307,
+     "bild": "bilder/c48c09934c5fbb2e.png",
+     "auszug": "Private AI meeting notes that stay on your computer. No meeting bot. Free and open source for Mac, Windows and Linux. An alternative to Granola, Otter and Fireflies. - FrigadeHQ/yogurt"
+    },
+    {
+     "titel": "ExitPath – Open-source ways out of Slack, Notion and Microsoft 365",
+     "link": "https://exitpath-ruddy.vercel.app/",
+     "domain": "exitpath-ruddy.vercel.app",
+     "datum": "2026-11-18T16:04:43.000Z",
+     "punkte": 251,
+     "bild": "bilder/888b4d412306eb20.png",
+     "auszug": "A catalog of open-source alternatives to common proprietary tools: what transfers, what does not, and how hard the move is."
+    },
+    {
+     "titel": "I've updated my Linux System Call website and API",
+     "link": "https://syscall.sh/",
+     "domain": "syscall.sh",
+     "datum": "2026-11-02T09:29:16.000Z",
+     "punkte": 238,
+     "bild": "bilder/0dd93b91f9048ef4.png",
+     "auszug": "The Linux syscall table for 38 architectures: every system call number, argument and register, with a table per architecture, from Linux 3.3 to 7.3."
+    },
+    {
+     "titel": "Petal, open-source CoScreen/ScreenHero finally free",
+     "link": "https://petal.live/",
+     "domain": "petal.live",
+     "datum": "2026-10-14T18:23:14.000Z",
+     "punkte": 228,
+     "bild": "bilder/84150844d53119b6.png",
+     "auszug": "Low latency, high resolution screensharing and remote control."
+    },
+    {
+     "titel": "BetterWispr – Free, open-source dictation for Mac",
+     "link": "https://betterwispr.com/",
+     "domain": "betterwispr.com",
+     "datum": "2026-10-11T12:01:28.000Z",
+     "punkte": 220,
+     "bild": "bilder/088643a4f7757fd4.png",
+     "auszug": "Hold a shortcut, speak, and BetterWispr types clean text into any Mac app. Local speech models, a style for each app, meeting notes and insights. Free and open source, with no account required."
+    },
+    {
+     "titel": "Esp32sim – Run ESP32 firmware in the browser",
+     "link": "https://github.com/mikroverk/esp32sim",
+     "domain": "github.com",
+     "datum": "2026-10-17T13:51:08.000Z",
+     "punkte": 212,
+     "bild": "bilder/8e507b2b6aa71408.png",
+     "auszug": "Open-source ESP32 emulator. Run real firmware locally or in your browser — no hardware, no cloud, no subscription. - mikroverk/esp32sim"
+    },
+    {
+     "titel": "Marelleo, an open-source story box I built for my kids using ESP32",
+     "link": "https://zebra.rodeo/en/blog/marelleo/",
+     "domain": "zebra.rodeo",
+     "datum": "2026-10-27T15:24:36.000Z",
+     "punkte": 195,
+     "bild": "bilder/942b8f8a978369b4.jpg",
+     "auszug": "A box that plays a story when a child puts a figurine on top. Built for my three kids by someone who knew nothing about electronics: the breadboard, the potentiometer that burned, the five enclosures and the printed…"
+    },
+    {
+     "titel": "Magnitude (YC S25) – Self-optimizing inference engine for agents",
+     "link": "https://github.com/magnitudedev/magnitude",
+     "domain": "github.com",
+     "datum": "2026-09-30T17:37:40.000Z",
+     "punkte": 194,
+     "bild": "bilder/dcca0034cf402253.png",
+     "auszug": "Open source inference engine that tunes its kernels on your hardware to find the fastest way to run each model. 2x faster than Ollama. Works on Apple Silicon, NVIDIA, AMD, Intel, or just a CPU. - m..."
+    },
+    {
+     "titel": "Drop – A rootless Linux sandbox with gVisor support",
+     "link": "https://droprun.sh/",
+     "domain": "droprun.sh",
+     "datum": "2026-09-22T13:52:47.000Z",
+     "punkte": 193,
+     "bild": "bilder/d368b7261d8ba2cf.png",
+     "auszug": "Drop: a rootless Linux sandbox for developers. It isolates coding agents and third-party packages while preserving your work environment."
+    }
+   ]
+  },
+  {
+   "name": "Neue Modelle",
+   "tage": 30,
+   "anzahl": 6,
+   "eintraege": [
+    {
+     "titel": "GPT‑6.2 Astra and Sol",
+     "link": "https://openai.com/index/introducing-gpt-6-2-astra-sol/",
+     "domain": "openai.com",
+     "datum": "2026-11-17T17:46:43.000Z",
+     "punkte": 1346,
+     "bild": "bilder/760578eba4facd70.png",
+     "auszug": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API."
+    },
+    {
+     "titel": "Claude Fable 5.2 and Mythos 5.2",
+     "link": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+     "domain": "anthropic.com",
+     "datum": "2026-11-09T18:56:29.000Z",
+     "punkte": 1926,
+     "bild": "bilder/b7ae33fda0f79046.jpg",
+     "auszug": "Claude Fable 5.2 and Claude Mythos 5.2, our new models for the hardest technical challenges. Fable 5.2 sets a new bar in coding, finance, and the sciences."
+    },
+    {
+     "titel": "Gemini 4 Neon",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+     "domain": "blog.google",
+     "datum": "2026-11-18T21:34:07.000Z",
+     "punkte": 1056,
+     "bild": "bilder/94937997ce91c530.png",
+     "auszug": "Today, we’re introducing Gemini 4 Neon"
+    },
+    {
+     "titel": "Qwen4-Max",
+     "link": "https://qwen.ai/blog?id=qwen4-max",
+     "domain": "qwen.ai",
+     "datum": "2026-11-16T02:14:44.000Z",
+     "punkte": 883,
+     "bild": "bilder/a24f98e48f52798f.png"
+    },
+    {
+     "titel": "We're releasing the weights of Mistral Large 4",
+     "link": "https://mistral.ai/news/mistral-large-4-oss/",
+     "domain": "mistral.ai",
+     "datum": "2026-10-29T14:13:21.000Z",
+     "punkte": 1732,
+     "bild": "bilder/fdfb71dc9fabe496.jpg",
+     "auszug": "The weights of Mistral Large 4 (Le Chonk) are now open. A 1T parameter multimodal model, and best open-weight model for coding, trained in Europe."
+    },
+    {
+     "titel": "Kimi K3.1 Pro and K3.1 Pro Highspeed",
+     "link": "https://www.kimi.ai/blog/kimi-k3-1-pro",
+     "domain": "kimi.ai",
+     "datum": "2026-10-23T16:59:08.000Z",
+     "punkte": 1737,
+     "bild": "bilder/032fd354b90f33ba.webp",
+     "auszug": "Introducing Kimi K3.1 Pro, our most capable 3T-class open-weight model with 1M-token context and major advances in coding, 3D modeling, and financial research."
+    },
+    {
+     "titel": "Gemini 4 Carbon",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+     "domain": "blog.google",
+     "datum": "2026-10-28T17:01:23.000Z",
+     "punkte": 1315,
+     "bild": "bilder/4d97769553719c16.png",
+     "auszug": "Gemini 4 Carbon is our strongest model with state-of-the-art cybersecurity and long horizon capabilities."
+    },
+    {
+     "titel": "Gemini 4 Hydrogen",
+     "link": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/",
+     "domain": "blog.google",
+     "datum": "2026-11-12T18:01:48.000Z",
+     "punkte": 575,
+     "bild": "bilder/c4b94b713fda1362.jpg",
+     "auszug": "Today, we’re introducing Gemini 4 Hydrogen, our daily driver for agentic workflows"
+    },
+    {
+     "titel": "Muse Ember: Our smallest, most efficient model",
+     "link": "https://research.meta.ai/blog/muse-ember",
+     "domain": "research.meta.ai",
+     "datum": "2026-11-09T17:58:46.000Z",
+     "punkte": 334,
+     "bild": "bilder/deca8b95bc012443.webp",
+     "auszug": "Muse Ember is our smallest and most efficient model, designed for complex reasoning execution and the work agents repeat all day."
+    },
+    {
+     "titel": "GPT-6.1 Terra",
+     "link": "https://openai.com/index/introducing-gpt-6-1-terra/",
+     "domain": "openai.com",
+     "datum": "2026-10-26T18:01:17.000Z",
+     "punkte": 638,
+     "bild": "bilder/760578eba4facd70.png",
+     "auszug": "Delivering fast and capable computer use at scale"
+    },
+    {
+     "titel": "Gemini Omni 1.2 Flash",
+     "link": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/",
+     "domain": "blog.google",
+     "datum": "2026-11-06T13:35:27.000Z",
+     "punkte": 369,
+     "bild": "bilder/70f353013fcf4571.png",
+     "auszug": "Gemini Omni 1.2 Flash brings native 15-second video generation and editing, stronger consistency, and 30% lower pricing."
+    }
+   ]
+  }
+ ]
+}
